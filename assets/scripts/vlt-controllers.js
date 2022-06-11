@@ -2636,3 +2636,21 @@
 	VLTJS.typesList.init();
 
 })(jQuery);
+				if ($filter.length) {
+
+					$filter.on('click', '[data-filter]', function (e) {
+
+						e.preventDefault();
+
+						var $this = $(this),
+							filter = $this.data('filter');
+
+						$this.addClass('active').siblings().removeClass('active');
+
+						$grid.isotope({
+							filter: filter
+						});
+
+					});
+
+				}
