@@ -127,4 +127,62 @@
     -webkit-transition-delay: 150ms;
             transition-delay: 150ms;
 }
+.swiper-slide{
+ cursor:pointer;
+}
+
+
+.vlt-gap-120
+{
+    height: 120px;
+}
+@media (min-width: 100px) and (max-width: 575px)
+{
+    .vlt-gap-120
+    {
+        height: 20px;
+    }
+}
+@media (min-width: 575px) and (max-width: 767px)
+{
+    .vlt-gap-120
+    {
+        height: 120px;
+    }
+}
+@media (min-width: 767px) and (max-width: 991px)
+{
+    .vlt-gap-120
+    {
+        height: 120px;
+    }
+}
+
+.vlt-gap-150
+{
+    height: 150px;
+}
+@media (min-width: 100px) and (max-width: 575px)
+{
+    .vlt-gap-150
+    {
+        height: 50px;
+    }
+}
+@media (min-width: 575px) and (max-width: 767px)
+{
+    .vlt-gap-150
+    {
+        height: 150px;
+    }
+}
+@media (min-width: 767px) and (max-width: 991px)
+{
+    .vlt-gap-150
+    {
+        height: 150px;
+    }
+}
+
+
 
