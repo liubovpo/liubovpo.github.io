@@ -39,7 +39,7 @@
 					<div class="vlt-navbar-inner">
 						<div class="vlt-navbar-inner--left">
 							<div class="d-flex align-items-center justify-content-center h-100">
-								<a class="vlt-navbar-logo" href="homepage-09.html"><img class="black" src="assets/img/root/logo-black.png" alt="" style="height: 35px;" loading="lazy"><img class="white" src="assets/img/root/logo-white.png" alt="" style="height: 35px;" loading="lazy"></a>
+								<a class="vlt-navbar-logo" href="index.html"><img class="black" src="assets/img/root/logo-black.png" alt="" style="height: 35px;" loading="lazy"><img class="white" src="assets/img/root/logo-white.png" alt="" style="height: 35px;" loading="lazy"></a>
 							</div>
 						</div>
 						
@@ -78,12 +78,12 @@
 				<div class="container">
 					<div class="text-center">
 						<ul class="vlt-isotope-filters" id="vlt-filter-portfolio-07">
-							<li class="active" data-filter="*"><span>All</span></li>
-							<li data-filter=".filter-branding"><span>Branding</span></li>
-							<li data-filter=".filter-web"><span>Web Design</span></li>
-							<li data-filter=".filter-corporate"><span>Corporate</span></li>
-							<li data-filter=".filter-motion"><span>Motion Design</span></li>
-							<li data-filter=".filter-misc"><span>Miscellaneous</span></li>
+							<li class="active" data-filter="*" id="*"><span>All</span></li>
+							<li data-filter=".filter-branding" id="branding"><span>Branding</span></li>
+							<li data-filter=".filter-web" id="web-design"><span>Web Design</span></li>
+							<li data-filter=".filter-corporate" id="corporate"><span>Corporate</span></li>
+							<li data-filter=".filter-motion" id="motion-design"><span>Motion Design</span></li>
+							<li data-filter=".filter-misc" id="miscellaneous"><span>Miscellaneous</span></li>
 						</ul>
 					</div>
 					<div class="vlt-gap-90"></div>
@@ -202,7 +202,7 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<!--Widget-->
-					<div class="vlt-widget vlt-widget--html vlt-widget--white"><a href="homepage-09.html"><img src="assets/img/root/logo-white.png" alt="" style="height: 30px;" loading="lazy"></a></div>
+					<div class="vlt-widget vlt-widget--html vlt-widget--white"><a href="index.html"><img src="assets/img/root/logo-white.png" alt="" style="height: 30px;" loading="lazy"></a></div>
 				</div>
 				
 				<div class="col-lg-3 col-sm-6">
@@ -226,6 +226,44 @@
 	<script src="assets/scripts/vlt-plugins.min.js"></script>
 	<script src="assets/scripts/vlt-helpers.js"></script>
 	<script src="assets/scripts/vlt-controllers.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			if (window.location.href.indexOf("branding") > -1) {
+			document.getElementById("branding").click();
+			$(window).scrollTop();
+			}
+		});
+
+		$(document).ready(function() {
+			if (window.location.href.indexOf("web-design") > -1) {
+			document.getElementById("web-design").click();
+			$(window).scrollTop();
+			}
+		});
+
+		$(document).ready(function() {
+			if (window.location.href.indexOf("corporate") > -1) {
+			document.getElementById("corporate").click();
+			$(window).scrollTop();
+			}
+		});
+
+		$(document).ready(function() {
+			if (window.location.href.indexOf("motion-design") > -1) {
+			document.getElementById("motion-design").click();
+			$(window).scrollTop();
+			}
+		});
+
+		$(document).ready(function() {
+			if (window.location.href.indexOf("miscellaneous") > -1) {
+			document.getElementById("miscellaneous").click();
+			$(window).scrollTop();
+			}
+		});
+
+	</script>
 </body>
 
 </html>
