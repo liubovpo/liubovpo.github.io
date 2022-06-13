@@ -184,5 +184,18 @@
     }
 }
 
-
-
+/*@media (min-width: 100px) and (max-width: 575px){
+.vlt-page-title--style-4 .vlt-page-title__title {
+    text-align:center;
+    padding: 0px 0 50px;
+}
+}*/
+@media (min-width: 100px) and (max-width: 575px){
+.vlt-page-title--style-4 {
+    text-align:center;
+    padding: 100px 0 50px;
+}
+}
+.vlt-page-title__overlay{
+    background-color: rgba(29,16,1,.4);
+}
