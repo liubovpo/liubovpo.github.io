@@ -2157,7 +2157,7 @@
 
 			var swiper = new Swiper(showcase.find('.swiper-container'), {
 				init: false,
-				initialSlide: 1,
+				initialSlide: 0,
 				speed: 1000,
 				loop: true,
 				grabCursor: true,
